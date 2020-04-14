@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    ViewBag.Title = "Invite";
+}
+
+@section Head {
+    <style>
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #f1f1f1;
+        }
+    </style>
+}
+
+<div>
+    <div class="text-center">
+        <h2>@ViewBag.Greeting мы собираемся на захватывающую вечеринку.</h2>
+        <h3>И вы приглашены, нужно только заполнить форму</h3>
+        <br />
+        <div class="btn btn-success">
+            @Html.ActionLink("Заполнить", "FormInvite")
+        </div>
+    </div>
+</div>

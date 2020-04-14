@@ -1,0 +1,47 @@
+﻿@model Invite.Models.Guest
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    ViewBag.Title = "Thanks";
+}
+
+@section Head {
+
+}
+
+@{
+    try
+    {
+        using (InviteContext context = new InviteContext())
+        {
+            context.Guests.Add(Model);
+            context.SaveChanges();
+        }
+
+        <div class="text-center">
+            <h1>Спасибо, @Model.Name!</h1>
+            <div class="lead">
+                @if (Model.WillAttend == true)
+                {
+                    @:Здорово что вы придете, напитки уже в холодильнике ;)
+                }
+                else
+                {
+                    @:Жаль что вы не придете, но спасибо что дали об этом знать.
+                }
+            </div>
+        </div>
+
+
+    }
+    catch (Exception ex)
+    {
+        <div class="text-center">
+            <h1>@Model.Name, Вы уже ответили на это приглашение.</h1>
+           
+        </div>
+    }
+}
+
+
+
