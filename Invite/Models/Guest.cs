@@ -8,7 +8,9 @@ namespace Invite.Models
 {
     public class Guest
     {
-        [Required(ErrorMessage = "Пожалуйства введите своё имя"), Key]
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "Пожалуйства введите своё имя")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Пожалуйства введите email")]

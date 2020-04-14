@@ -232,6 +232,10 @@
     <Compile Include="Migrations\202004141335308_InitialCreate.Designer.cs">
       <DependentUpon>202004141335308_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004141424353_AddId.cs" />
+    <Compile Include="Migrations\202004141424353_AddId.Designer.cs">
+      <DependentUpon>202004141424353_AddId.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Guest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -261,6 +265,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202004141335308_InitialCreate.resx">
       <DependentUpon>202004141335308_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004141424353_AddId.resx">
+      <DependentUpon>202004141424353_AddId.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

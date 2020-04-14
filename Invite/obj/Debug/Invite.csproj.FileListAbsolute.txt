@@ -83,3 +83,4 @@ C:\Users\gvozd\source\repos\Invite\Invite\bin\ru\EntityFramework.resources.dll
 C:\Users\gvozd\source\repos\Invite\Invite\obj\Debug\Invite.csprojAssemblyReference.cache
 C:\Users\gvozd\source\repos\Invite\Invite\obj\Debug\Invite.Migrations.InitialCreate.resources
 C:\Users\gvozd\source\repos\Invite\Invite\obj\Debug\Invite.csproj.GenerateResource.cache
+C:\Users\gvozd\source\repos\Invite\Invite\obj\Debug\Invite.Migrations.AddId.resources
